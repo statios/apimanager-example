@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74CECFCCF55F4B9DCD3B1BE3 /* Pods_apimanager_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD891B9DC202C26168AA1AC /* Pods_apimanager_example.framework */; };
 		F32736ED245EF33B007DEC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32736EC245EF33B007DEC1A /* AppDelegate.swift */; };
 		F32736EF245EF33B007DEC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32736EE245EF33B007DEC1A /* SceneDelegate.swift */; };
 		F32736F1245EF33B007DEC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32736F0245EF33B007DEC1A /* ViewController.swift */; };
 		F32736F4245EF33B007DEC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32736F2245EF33B007DEC1A /* Main.storyboard */; };
 		F32736F6245EF33D007DEC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32736F5245EF33D007DEC1A /* Assets.xcassets */; };
 		F32736F9245EF33D007DEC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32736F7245EF33D007DEC1A /* LaunchScreen.storyboard */; };
+		F3273701245EF362007DEC1A /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3273700245EF362007DEC1A /* Networking.swift */; };
+		F3273703245EF378007DEC1A /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3273702245EF378007DEC1A /* MovieAPI.swift */; };
+		F3537C92245EF81A005A1027 /* FaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3537C91245EF81A005A1027 /* FaultInfo.swift */; };
+		F3537C94245EF821005A1027 /* BoxOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3537C93245EF821005A1027 /* BoxOffice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA25DA8383C909E87E8E25E /* Pods-apimanager-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apimanager-example.debug.xcconfig"; path = "Target Support Files/Pods-apimanager-example/Pods-apimanager-example.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD891B9DC202C26168AA1AC /* Pods_apimanager_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_apimanager_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C314D1DFDDF327867DE1EE /* Pods-apimanager-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apimanager-example.release.xcconfig"; path = "Target Support Files/Pods-apimanager-example/Pods-apimanager-example.release.xcconfig"; sourceTree = "<group>"; };
 		F32736E9245EF33B007DEC1A /* apimanager-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apimanager-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32736EC245EF33B007DEC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32736EE245EF33B007DEC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		F32736F5245EF33D007DEC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32736F8245EF33D007DEC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32736FA245EF33D007DEC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3273700245EF362007DEC1A /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F3273702245EF378007DEC1A /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		F3537C91245EF81A005A1027 /* FaultInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaultInfo.swift; sourceTree = "<group>"; };
+		F3537C93245EF821005A1027 /* BoxOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOffice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CECFCCF55F4B9DCD3B1BE3 /* Pods_apimanager_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7246FB5702341D1615AFA356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA25DA8383C909E87E8E25E /* Pods-apimanager-example.debug.xcconfig */,
+				E2C314D1DFDDF327867DE1EE /* Pods-apimanager-example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC36A5F7C85F0EE52FADAABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD891B9DC202C26168AA1AC /* Pods_apimanager_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F32736E0245EF33B007DEC1A = {
 			isa = PBXGroup;
 			children = (
 				F32736EB245EF33B007DEC1A /* apimanager-example */,
 				F32736EA245EF33B007DEC1A /* Products */,
+				7246FB5702341D1615AFA356 /* Pods */,
+				EC36A5F7C85F0EE52FADAABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,67 @@
 		F32736EB245EF33B007DEC1A /* apimanager-example */ = {
 			isa = PBXGroup;
 			children = (
+				F3273706245EF38F007DEC1A /* Delegates */,
+				F3273705245EF387007DEC1A /* ViewControllers */,
+				F3273704245EF37D007DEC1A /* Services */,
+				F3537C90245EF80C005A1027 /* Models */,
+				F3273707245EF397007DEC1A /* Rescources */,
+				F3273708245EF39F007DEC1A /* Supports */,
+			);
+			path = "apimanager-example";
+			sourceTree = "<group>";
+		};
+		F3273704245EF37D007DEC1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3273700245EF362007DEC1A /* Networking.swift */,
+				F3273702245EF378007DEC1A /* MovieAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3273705245EF387007DEC1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F32736F0245EF33B007DEC1A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F3273706245EF38F007DEC1A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
 				F32736EC245EF33B007DEC1A /* AppDelegate.swift */,
 				F32736EE245EF33B007DEC1A /* SceneDelegate.swift */,
-				F32736F0245EF33B007DEC1A /* ViewController.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F3273707245EF397007DEC1A /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
 				F32736F2245EF33B007DEC1A /* Main.storyboard */,
 				F32736F5245EF33D007DEC1A /* Assets.xcassets */,
 				F32736F7245EF33D007DEC1A /* LaunchScreen.storyboard */,
+			);
+			path = Rescources;
+			sourceTree = "<group>";
+		};
+		F3273708245EF39F007DEC1A /* Supports */ = {
+			isa = PBXGroup;
+			children = (
 				F32736FA245EF33D007DEC1A /* Info.plist */,
 			);
-			path = "apimanager-example";
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		F3537C90245EF80C005A1027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3537C91245EF81A005A1027 /* FaultInfo.swift */,
+				F3537C93245EF821005A1027 /* BoxOffice.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F32736FD245EF33D007DEC1A /* Build configuration list for PBXNativeTarget "apimanager-example" */;
 			buildPhases = (
+				DCE87A8A1B71F7E646A8FF79 /* [CP] Check Pods Manifest.lock */,
 				F32736E5245EF33B007DEC1A /* Sources */,
 				F32736E6245EF33B007DEC1A /* Frameworks */,
 				F32736E7245EF33B007DEC1A /* Resources */,
+				9CC2DE9D94F7D7DCFC365FE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +219,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CC2DE9D94F7D7DCFC365FE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apimanager-example/Pods-apimanager-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apimanager-example/Pods-apimanager-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-apimanager-example/Pods-apimanager-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE87A8A1B71F7E646A8FF79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-apimanager-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F32736E5245EF33B007DEC1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +268,11 @@
 			files = (
 				F32736F1245EF33B007DEC1A /* ViewController.swift in Sources */,
 				F32736ED245EF33B007DEC1A /* AppDelegate.swift in Sources */,
+				F3537C94245EF821005A1027 /* BoxOffice.swift in Sources */,
+				F3537C92245EF81A005A1027 /* FaultInfo.swift in Sources */,
 				F32736EF245EF33B007DEC1A /* SceneDelegate.swift in Sources */,
+				F3273701245EF362007DEC1A /* Networking.swift in Sources */,
+				F3273703245EF378007DEC1A /* MovieAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +414,12 @@
 		};
 		F32736FE245EF33D007DEC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA25DA8383C909E87E8E25E /* Pods-apimanager-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
-				INFOPLIST_FILE = "apimanager-example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/apimanager-example/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +433,12 @@
 		};
 		F32736FF245EF33D007DEC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C314D1DFDDF327867DE1EE /* Pods-apimanager-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
-				INFOPLIST_FILE = "apimanager-example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/apimanager-example/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
